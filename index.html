@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Gallery</title>
+    <link rel="stylesheet" href="PC2.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Movie Gallery</h1>
+        <p>Ven y disfruta desde el tu lugar más cómodo para las películas que ofrecemos.</p>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#movie-gallery" class="nav-link">Gallery</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <h2>Bienvenido a Movie Gallery</h2>
+        <p>Explora un mundo de películas al alcance de tu mano. Desde películas de acción explosivas hasta dramas conmovedores y comedias de risa, ¡tenemos algo para todos! Sumérgete en nuestra galería para descubrir tu próxima película favorita.</p>
+    </section>
+
+    
+    <section class="filter-section">
+        <label for="genre-select">Filtrar por Género:</label>
+        <select id="genre-select">
+            <option value="all">All Genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+        </select>
+    </section>
+
+    
+    <section class="movie-gallery" id="movie-gallery">
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Movie Title</h2>
+            <img id="modal-image" src="" alt="Movie Image">
+            <p id="modal-description">Movie description goes here.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2024 Movie Gallery</p>
+    </footer>
+
+    <script src="PC2.js"></script>
+</body>
+</html>
